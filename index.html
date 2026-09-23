@@ -1,34 +1,126 @@
-ng>
-</div>
+.about-box strong{
+  font-size:48px;
+  line-height:1;
+  margin-bottom:10px;
+}
 
-<div class="card">
-<div class="num">02</div>
-<h3>Для салона</h3>
-<p>Прайс-листы, сертификаты, иконки услуг и рекламные материалы.</p>
-<strong class="price">от 100 000 сум</strong>
-</div>
+.about-box span{
+  color:#cfc8d2;
+}
 
-<div class="card">
-<div class="num">03</div>
-<h3>Полиграфия</h3>
-<p>Визитки, флаеры, буклеты, листовки и другие печатные материалы.</p>
-<strong class="price">от 80 000 сум</strong>
-</div>
+.about-text{
+  color:var(--muted);
+  font-size:17px;
+}
 
-<div class="card">
-<div class="num">04</div>
-<h3>Реклама</h3>
-<p>Баннеры, наружная реклама и макеты для Instagram и Telegram.</p>
-<strong class="price">от 100 000 сум</strong>
-</div>
+.about-text p{
+  margin-bottom:20px;
+}
 
-<div class="card">
-<div class="num">05</div>
-<h3>Логотип</h3>
-<p>Минималистичный логотип и базовые элементы фирменного оформления.</p>
-<strong class="price">от 150 000 сум</strong>
-</div>
+/* SERVICES */
 
-<div class="card">
-<div class="num">06</div>
-<h3>Иконки</h
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.service{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:25px;
+  padding:28px;
+  transition:.3s;
+}
+
+.service:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow);
+}
+
+.service-number{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:var(--soft);
+  color:var(--accent-dark);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  margin-bottom:25px;
+}
+
+.service h3{
+  font-size:21px;
+  margin-bottom:10px;
+}
+
+.service p{
+  color:var(--muted);
+  font-size:14px;
+  min-height:68px;
+}
+
+.price{
+  display:block;
+  margin-top:22px;
+  font-weight:700;
+  color:var(--accent-dark);
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.work{
+  min-height:250px;
+  border-radius:27px;
+  overflow:hidden;
+  position:relative;
+  background:linear-gradient(135deg,#ded2e2,#f7f2f8);
+  display:flex;
+  align-items:flex-end;
+  padding:25px;
+  transition:.3s;
+}
+
+.work:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow);
+}
+
+.work:nth-child(2){
+  background:linear-gradient(135deg,#eee3d6,#faf8f3);
+}
+
+.work:nth-child(3){
+  background:linear-gradient(135deg,#dddde8,#f5f5f8);
+}
+
+.work:nth-child(4){
+  background:linear-gradient(135deg,#e2d7d0,#f8f3ef);
+}
+
+.work:nth-child(5){
+  background:linear-gradient(135deg,#d9e0dc,#f5f8f6);
+}
+
+.work:nth-child(6){
+  background:linear-gradient(135deg,#e5dce8,#faf7fb);
+}
+
+.work-content{
+  position:relative;
+  z-index:2;
+}
+
+.work-number{
+  font-size:54px;
+  font-weight:700;
+  opacity:.18;
+  position:absolute;
